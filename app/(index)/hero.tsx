@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { TextReveal } from '@/components/text-reveal';
+
 export default function Hero() {
   return (
     <section className="container">
@@ -15,22 +17,15 @@ export default function Hero() {
         <h1 className="" style={{ fontSize: 'clamp(40px,5vw,56px)' }}>
           Blockchain + Binance
         </h1>
-        <p className="font-poppins my-4 w-1/2 text-xl leading-9 max-lg:w-full">
-          Every digital artwork on Upside is authentic and truly unique.
-          Blockchain technology makes this new aproch to digital ownership
-          possible. <br />
-          <br /> Open and decentralized protocol for syncing various Wallets
-          issues on Secure Server. This is not an app but a protocol that
-          establishes a remote resolution between all noncustodial wallet.{' '}
-          <br />
-          <br /> It is an online server which gets you across to every wallet
-          representative to enable effective complain and rectification of
-          issues.
-          <br />
-          <br />
-          You will be on a chat with an Artificial Intelligence Robot with zero
-          Human interference.
-        </p>
+        <TextReveal className="my-4 w-1/2 text-xl leading-9 max-lg:w-full">
+          The Upside platform offers authentic and uniquely owned digital
+          artwork, facilitated by blockchain technology. It utilizes an open,
+          decentralized protocol to connect various noncustodial wallets
+          securely. Unlike an app, it&apos;s a protocol enabling remote issue
+          resolution with wallet representatives through an online server. This
+          service includes a chat interface with an AI robot for efficient issue
+          resolution without human intervention.
+        </TextReveal>
         <Link href={'/dapps'}>
           <button className="rounded-lg bg-primary px-5 py-2 transition-all hover:bg-primary/70">
             Connect Wallet

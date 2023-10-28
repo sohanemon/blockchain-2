@@ -1,23 +1,23 @@
 export const colors = {
   default: {
-    background: '#ffffff',
-    foreground: '#000000',
-    card: '#ffffff',
-    'card-foreground': '#000000',
-    popover: '#ffffff',
-    'popover-foreground': '#000000',
-    primary: '#ff6767',
-    'primary-foreground': '#f7f9fc',
-    secondary: '#f7f7f7',
-    'secondary-foreground': '#0e0e0e',
-    muted: '#f7f7f7',
-    'muted-foreground': '#b6b6b6',
-    accent: '#f7f7f7',
-    'accent-foreground': '#0e0e0e',
-    destructive: '#f95757',
-    'destructive-foreground': '#fafafa',
-    border: '#e4e4e4',
-    input: '#e4e4e4',
-    ring: '#ff6767',
+    background: '#1B1B1B', // Dark background color
+    foreground: '#FFFFFF', // Light text color
+    card: '#2E2E2E', // Slightly lighter card background
+    'card-foreground': '#FFFFFF',
+    popover: '#333333', // Popover or modal background color
+    'popover-foreground': '#FFFFFF',
+    primary: '#00A2FF', // Primary accent color
+    'primary-foreground': '#FFFFFF',
+    secondary: '#3A3A3A', // Secondary background color
+    'secondary-foreground': '#FFFFFF',
+    muted: '#595959', // Muted or secondary text color
+    'muted-foreground': '#B0B0B0',
+    accent: '#FFD700', // Highlight or accent color
+    'accent-foreground': '#000000',
+    destructive: '#FF6347', // Destructive or error color
+    'destructive-foreground': '#FFFFFF',
+    border: '#333333', // Border color
+    input: '#2E2E2E', // Input field background color
+    ring: '#00A2FF', // Ring or selection color
   },
 };

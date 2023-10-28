@@ -28,7 +28,11 @@ export default function Page() {
                 <Motion
                   className="flex h-full flex-col items-center rounded-md bg-white px-10 py-7 "
                   whileHover={{ y: -2, x: 2 }}
-                  whileTap={{ scale: [1, 0], opacity: [1, 0] }}
+                  whileTap={{
+                    scale: [1, 0],
+                    opacity: [1, 0],
+                    borderRadius: '100%',
+                  }}
                 >
                   <Img
                     className="rounded-full"
