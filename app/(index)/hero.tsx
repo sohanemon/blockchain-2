@@ -14,7 +14,7 @@ export default function Hero() {
         initial={{ y: 0 }}
         transition={{
           repeat: Infinity,
-          duration: 8,
+          duration: 11,
           repeatType: 'reverse',
           ease: 'linear',
         }}
@@ -25,7 +25,7 @@ export default function Hero() {
           src="/public/assets/hero.svg"
         />
       </Motion>
-      <Glob className="absolute right-0 top-full" />
+      <Glob className="absolute left-full top-full" />
       <div className="relative py-20">
         <Glob className="absolute right-full top-0" />
         <h1 className="" style={{ fontSize: 'clamp(40px,5vw,56px)' }}>

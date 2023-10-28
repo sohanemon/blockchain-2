@@ -23,7 +23,7 @@ export default function Page() {
             >
               <Link
                 className="text-center font-bold md:text-xl "
-                href={'/form'}
+                href={'/submit'}
               >
                 <Motion
                   className="flex h-full flex-col items-center rounded-md bg-white px-10 py-7 "
