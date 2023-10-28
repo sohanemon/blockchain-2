@@ -34,15 +34,11 @@ export default function Selection() {
         <br />
         <Spotlight className="relative mt-5 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           {data.map((_) => (
-            <Link
-              key={_.title}
-              className="block h-full rounded-xl"
-              href={'/dapps'}
-              style={{ backgroundColor: 'rgba(14, 165, 233, 0.05)' }}
-            >
+            <Link key={_.title} className="block h-full " href={'/dapps'}>
               <Motion
-                className="h-full cursor-pointer p-8 tracking-wider "
+                className="h-full cursor-pointer rounded-2xl p-8 tracking-wider outline-1 outline-secondary transition-[outline] duration-500 hover:outline"
                 initial="bottom"
+                style={{ backgroundColor: 'rgba(14, 165, 233, 0.05)' }}
                 transition={{ delay: 0.3, duration: 0.5 }}
               >
                 {withComp(_.icon)}{' '}

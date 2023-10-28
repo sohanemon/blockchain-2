@@ -28,7 +28,7 @@ export default function Hero() {
       <Glob className="absolute left-full top-full" />
       <div className="relative py-20">
         <Glob className="absolute right-full top-0" />
-        <h1 className="" style={{ fontSize: 'clamp(40px,5vw,56px)' }}>
+        <h1 className="font-bold" style={{ fontSize: 'clamp(40px,5vw,56px)' }}>
           Blockchain + Binance
         </h1>
         <TextReveal className="my-4 text-xl leading-9 max-lg:w-full">

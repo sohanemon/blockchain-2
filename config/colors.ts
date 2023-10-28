@@ -8,7 +8,7 @@ export const colors = {
     'popover-foreground': '#FFFFFF',
     primary: '#00A2FF', // Primary accent color
     'primary-foreground': '#FFFFFF',
-    secondary: '#3A3A3A', // Secondary background color
+    secondary: 'rgba(14,165,233,1)', // Secondary background color
     'secondary-foreground': '#FFFFFF',
     muted: '#595959', // Muted or secondary text color
     'muted-foreground': '#B0B0B0',

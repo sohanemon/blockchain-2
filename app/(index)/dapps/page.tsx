@@ -17,7 +17,7 @@ export default function Page() {
               initial="bottom"
               viewport={{ once: true }}
               transition={{
-                delay: 0.05 * idx,
+                delay: 0.1 * idx,
                 ease: 'easeInOut',
               }}
             >
