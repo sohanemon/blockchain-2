@@ -1,11 +1,13 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { cn } from '@sohanemon/utils';
 
 import useNavToggle from '@/hooks/nav-toggle';
 
-import CoinLib from './coinlib';
 import { Motion } from './motion';
+
+const CoinLib = dynamic(async () => import('./coinlib'));
 
 export function Navbar() {
   const { hidden, leaved } = useNavToggle();
