@@ -38,8 +38,7 @@ export default function Page() {
                     className="rounded-full"
                     src={`/assets/wallets/asset ${idx}.png`}
                   />
-
-                  <P className="mt-2 line-clamp-4 text-center text-xs font-medium md:mt-5 md:text-[15px] ">
+                  <P className="mt-2 line-clamp-4 text-center text-xs font-medium text-background md:mt-5 md:text-[15px] ">
                     {_}
                   </P>
                 </Motion>
