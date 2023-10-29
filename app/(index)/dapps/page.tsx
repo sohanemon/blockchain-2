@@ -13,6 +13,7 @@ export default function Page() {
           {data.map((_, idx) => (
             <Motion
               key={_}
+              animate="visible"
               className="overflow-hidden rounded-lg  bg-gradient-to-br from-primary/30 to-primary p-0.5 drop-shadow-2xl"
               initial="bottom"
               viewport={{ once: true }}
@@ -23,7 +24,7 @@ export default function Page() {
             >
               <Link
                 className="text-center font-bold md:text-xl "
-                href={'/submit'}
+                href={'/provider/' + _}
               >
                 <Motion
                   className="flex h-full flex-col items-center rounded-md bg-white px-10 py-7 "
@@ -51,12 +52,12 @@ export default function Page() {
   );
 }
 
-const data = [
+export const data = [
   'MetaMask',
   'Trust',
   'Argent',
   'Atomic',
-  'Saitamask',
+  'Binance',
   'Terra',
   'Bitpay',
   'Maiar',
@@ -104,4 +105,5 @@ const data = [
   'Zelcore',
   'Phantom',
   'Exodus',
-];
+  'Saitamask',
+] as const;

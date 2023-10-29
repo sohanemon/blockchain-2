@@ -17,7 +17,7 @@ export const colors = {
     destructive: '#FF6347', // Destructive or error color
     'destructive-foreground': '#FFFFFF',
     border: '#333333', // Border color
-    input: '#2E2E2E', // Input field background color
+    input: '#333333', // Input field background color
     ring: '#00A2FF', // Ring or selection color
   },
 };

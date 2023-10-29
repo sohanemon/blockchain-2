@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Img from '@sohanemon/next-image';
 
+import { Button } from '@/components/ui/button';
 import { Glob } from '@/components/glob';
 import { Motion } from '@/components/motion';
 import { TextReveal } from '@/components/text-reveal';
@@ -42,9 +43,7 @@ export default function Hero() {
         </TextReveal>
         <br />
         <Link href={'/dapps'}>
-          <button className="rounded-lg bg-primary px-5 py-2 transition-all hover:bg-primary/70">
-            Connect Wallet
-          </button>
+          <Button>Connect Wallet</Button>
         </Link>
       </div>
     </section>
