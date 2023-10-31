@@ -2,6 +2,7 @@ import '@/styles/custom.css';
 import '@/styles/globals.css';
 import { cn } from '@sohanemon/utils';
 import { TailwindIndicator } from '@sohanemon/utils/components';
+import { Toaster } from 'react-hot-toast';
 
 import { siteConfig } from '@/config/site';
 import { fontSans } from '@/lib/fonts';
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             fontSans.variable
           )}
         >
+          <Toaster />
           {children}
           <TailwindIndicator />
         </body>
